@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="master.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">
+      This Survey is know about the performance of a web developer.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your Full Name"
+        required
+      />
+      <br />
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+        required
+      />
+      <br />
+      <label id="number-label" for="number">Experiance:</label>
+      <input
+        type="number"
+        name="experiance"
+        id="number"
+        placeholder="Years of Experience"
+        min="0"
+        max="30"
+      />
+      <br />
+      <label for="dropdown">Select your age Group:</label>
+      <select id="dropdown" name="age-group">
+        <option value="1">Below 18</option>
+        <option value="2">18-30</option>
+        <option value="3">Above 18</option>
+      </select>
+      <br />
+      <fieldset>
+        <legend>Which is your favourite Web Stack</legend>
+        <label>
+          <input type="radio" name="stack" value="mern" />
+          Mern
+        </label>
+        <label>
+          <input type="radio" name="stack" value="mean" />
+          Mean
+        </label>
+        <label>
+          <input type="radio" name="stack" value="pdrn" />
+          Pdrn
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Your most comfortable development?</legend>
+        <label>
+          <input type="checkbox" name="dev" value="backend" />
+          Backend Development
+        </label>
+        <label>
+          <input type="checkbox" name="dev" value="frontend" />
+          Frontend Development
+        </label>
+        <label>
+          <input type="checkbox" name="dev" value="full-stack" />
+          Full Stack development
+        </label>
+      </fieldset>
+      <br />
+      <label for="comment">Any comments?</label>
+      <textarea id="comment" name="comment"></textarea>
+      <br />
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
