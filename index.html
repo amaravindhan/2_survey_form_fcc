@@ -8,81 +8,115 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Survey</h1>
-    <p id="description">
-      This Survey is know about the performance of a web developer.
-    </p>
-    <form id="survey-form">
-      <label id="name-label" for="name">Name:</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Enter your Full Name"
-        required
-      />
-      <br />
-      <label id="email-label" for="email">Email:</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter your Email"
-        required
-      />
-      <br />
-      <label id="number-label" for="number">Experiance:</label>
-      <input
-        type="number"
-        name="experiance"
-        id="number"
-        placeholder="Years of Experience"
-        min="0"
-        max="30"
-      />
-      <br />
-      <label for="dropdown">Select your age Group:</label>
-      <select id="dropdown" name="age-group">
-        <option value="1">Below 18</option>
-        <option value="2">18-30</option>
-        <option value="3">Above 18</option>
-      </select>
-      <br />
-      <fieldset>
-        <legend>Which is your favourite Web Stack</legend>
-        <label>
-          <input type="radio" name="stack" value="mern" />
-          Mern
-        </label>
-        <label>
-          <input type="radio" name="stack" value="mean" />
-          Mean
-        </label>
-        <label>
-          <input type="radio" name="stack" value="pdrn" />
-          Pdrn
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Your most comfortable development?</legend>
-        <label>
-          <input type="checkbox" name="dev" value="backend" />
-          Backend Development
-        </label>
-        <label>
-          <input type="checkbox" name="dev" value="frontend" />
-          Frontend Development
-        </label>
-        <label>
-          <input type="checkbox" name="dev" value="full-stack" />
-          Full Stack development
-        </label>
-      </fieldset>
-      <br />
-      <label for="comment">Any comments?</label>
-      <textarea id="comment" name="comment"></textarea>
-      <br />
-      <button id="submit">Submit</button>
-    </form>
+    <div class="container">
+      <header id="header">
+        <h1 id="title">Web Developer Survey Form</h1>
+        <p id="description">
+          This Survey is know about the performance of a web developer.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Full Name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Experience:</label>
+          <input
+            type="number"
+            name="experiance"
+            id="number"
+            placeholder="Years of Experience"
+            min="0"
+            max="30"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">What is your age group?</label>
+          <select id="dropdown" name="age-group" class="form-control">
+            <option disabled selected value="">Select age group</option>
+            <option value="1">Below 18</option>
+            <option value="2">18-30</option>
+            <option value="3">Above 18</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Which is your most used Web Stack?</legend>
+            <label>
+              <input type="radio" name="stack" value="mern" />
+              Mern
+            </label>
+            <label>
+              <input type="radio" name="stack" value="mean" />
+              Mean
+            </label>
+            <label>
+              <input type="radio" name="stack" value="pdrn" />
+              Postgres Django React Node
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Your most favourite development area?</legend>
+            <label>
+              <input type="checkbox" name="dev" value="backend" />
+              Backend Development
+            </label>
+            <label>
+              <input type="checkbox" name="dev" value="frontend" />
+              Frontend Development
+            </label>
+            <label>
+              <input type="checkbox" name="dev" value="full-stack" />
+              Full Stack development
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="comment">Any comments?</label>
+          <textarea
+            class="form-control"
+            id="comment"
+            name="comment"
+            rows="5"
+            placeholder="Enter your comments here ..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+      <footer id="footer">
+        Build with Passion |
+        <a
+          href="https://github.com/amaravindhan"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+          >Aravindhan Sundaram</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

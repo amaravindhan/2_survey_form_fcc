@@ -1,0 +1,135 @@
+:root {
+    --color-green: #38B261;
+    --color-transparent-green: rgba(56, 178, 97, 0.5);
+    --color-light-green: rgba(56, 178, 97, 0.7);
+    --color-grey: rgba(42, 51, 45, 0.5);
+    --color-pink: #B23889;
+    --color-lightpink: hsl(320, 52%, 56%);
+    --color-black: #000000;
+    --color-white: #fff;
+}
+
+
+body {
+    background: var(--color-green, #38B261);
+    background-image: linear-gradient(90deg, var(--color-transparent-green, rgba(56, 178, 97, 0.5)), var(--color-grey, rgba(42, 51, 45, 0.5))),
+        url(https://images.pexels.com/photos/7988113/pexels-photo-7988113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    color: var(--color-black, #000000);
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 740px;
+    width: 100%;
+    margin: 30px auto 30px auto;
+}
+
+#header {
+    text-align: center;
+}
+
+#description {
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+#survey-form {
+    background-color: var(--color-light-green, hsl(140, 52%, 66%));
+    box-shadow: 2px 2px 2px 2px var(--color-light-green);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.124rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-light-green);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input,
+select,
+button {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+[type="radio"],
+[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.65rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+#comment {
+    min-height: 120px;
+    resize: vertical;
+    padding: 0.65rem;
+    width: 100%;
+}
+
+#submit {
+    display: block;
+    width: 104%;
+    padding: 0.75rem;
+    color: var(--color-white);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: var(--color-pink);
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#submit:hover {
+    animation: bubble;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.link {
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-pink);
+}
+
+.link:focus,
+.link:hover {
+    color: var(--color-white);
+}
+
+@keyframes bubble {
+    100% {
+        background-color: var(--color-lightpink);
+    }
+}

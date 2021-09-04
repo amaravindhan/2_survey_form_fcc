@@ -1,1 +1,3 @@
-# 2_survey_form_fcc
+# Responsive Web Design Project - Survey Form
+
+Preview link - https://codepen.io/amaravindhan/full/ZEyOYNp
